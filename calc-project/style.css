@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-color: ; */
+}
+
+.display {
+    grid-area: display;
+    text-align: right;
+    padding: 10px;
+    font-size: 3em;
+    background-color: black;
+    color: white;
+}
+
+.clear {
+    grid-area: clear;
+    background-color: aqua;
+}
+
+.clear-button, .back-button, .number-button {
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    margin:0;
+    width: 100%;
+}
+
+.divide, .multiply, .subtract, .add, .equals {
+    background-color: aqua;
+}
+
+.divide-button, .multiply-button, .subtract-button, .add-button, .equals-button {
+    background-color: coral;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    margin:0;
+    width: 100%;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.equals {
+    grid-area: equals;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas: "display display display display"
+                         "clear clear back divide"
+                         "seven eight nine multiply"
+                         "four five six subtract"
+                         "one two three add"
+                         "zero zero zero equals";
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: aqua;
+}
