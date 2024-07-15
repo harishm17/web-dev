@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes</title>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <p>The following page has the list of my recipes</p>
+    <div>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="flex-container">
+        <article>
+            <h3 class="recipe-title">Chicken Nuggets</h3>
+            <h5>Author: Harish</h5>
+            <img src="images/chicken_nuggets.jpg" alt="Chicken Nuggets"/>
+            <h5>Ingredients</h5>
+            <ul>
+                <li>Chicken</li>
+                <li>Bread Crumbs</li>
+                <li>Oil</li>
+            </ul>
+            <h5>Instructions</h5>
+            <ol>
+                <li>Take chicken and cut into pieces</li>
+                <li>Coat the chicken pieces with bread crumbs</li>
+                <li>Deep fry the chicken pieces in oil</li>
+            </ol>
+        </article>
+        <article>
+            <h3 class="recipe-title">Pizza</h3>
+            <h5 class="recipe-author">Author: Harish</h5>
+            <img class="recipe-img" src="images/pizza.jpg" alt="Pizza"/>
+            <h5>Ingredients</h5>
+            <ul>
+                <li>Flour</li>
+                <li>Tomato</li>
+                <li>Cheese</li>
+            </ul>
+            <h5>Instructions</h5>
+            <ol>
+                <li>Make dough with flour</li>
+                <li>Spread tomato sauce on the dough</li>
+                <li>Add cheese on top of the tomato sauce</li>
+                <li>Bake in pre-heated oven at 300 Celcius for 10 minutes</li>
+            </ol>
+        </article>
+        <article>
+            <h3 class="recipe-title">French Fries</h3>
+            <h5>Author: Harish</h5>
+            <img src="images/french_fries.jpg" alt="French Fries"/>
+            <h5>Ingredients</h5>
+            <ul>
+                <li>Potato</li>
+                <li>Salt</li>
+                <li>Oil</li>
+            </ul>
+            <h5>Instructions</h5>
+            <ol>
+                <li>Cut potato into thin slices</li>
+                <li>Fry the potato slices in oil</li>
+                <li>Add salt to the fried potato slices</li>
+                <li>Serve hot</li>
+            </ol>
+        </article>
+    </div>
+</body>
+</html>
+<style>
+    h1 {
+        color: blue;
+        font-size: 24px;
+    }
+
+    p {
+        color: green;
+        font-size: 16px;
+    }
+
+    a {
+        color: red;
+        text-decoration: underline;
+        margin-right: 10px;
+    }
+
+    h3 {
+        color: purple;
+        font-size: 20px;
+    }
+
+    h5 {
+        color: orange;
+        font-size: 14px;
+    }
+
+    ul {
+        color: brown;
+        font-size: 12px;
+    }
+
+    ol {
+        color: teal;
+        font-size: 12px;
+    }
+    article img {
+        max-width: 60%; /* Adjust the maximum width to better fit the layout */
+        height: auto; /* Maintain the aspect ratio */
+        border-radius: 10px; /* Add rounded corners */
+        margin-top: 10px; /* Add some space above the image */
+        margin-bottom: 20px; /* Add some space below the image */
+        display: block; /* Ensure the image is centered by making it a block element */
+        margin-left: auto; /* Center the image horizontally */
+        margin-right: auto;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .recipe-title {
+        background-color: lightblue;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>

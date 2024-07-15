@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.article-title {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.header {
+    grid-area: header;
+    border: 3px solid black;
+}
+
+
+.story-1 {
+    grid-area: story-1;
+}
+
+.story-2 {
+    grid-area: story-2;
+}
+
+.story-3 {
+    grid-area: story-3;
+}
+
+.story-4 {
+    grid-area: story-4;
+}
+
+.story-5 {
+    grid-area: story-5;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "story-1 story-2 story-3"
+        "story-4 story-5 story-5";
+    margin: 20px;
+}
+
+
+.article-box {
+    border: 3px solid black;
+    padding: 20px;
+    margin: 0px;
+}
+
+.article-content {
+    text-align: justify;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+
+.article-image {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.section-link {
+    font-family: "Futura";
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    padding: 30px;
+}
+

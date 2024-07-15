@@ -1,0 +1,106 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{ background-color: whitesmoke;}
+
+.store-name {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align the items vertically in the center */
+    text-align: left; /* Ensure text is aligned to the left */
+    margin: 0 auto; /* Center the container on the page */
+    gap: 10px; /* Optional: Adds space between the image and the text */
+    background-color: brown;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.items-group {
+    grid-area: items;
+    background-color: antiquewhite;
+    margin: 20px;
+    /* margin-left: ; */
+}
+
+.input-group {
+    position: relative;
+    display: block;
+    margin: 20px;
+}
+
+
+.input-name {
+    border-color: brown;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.input-label {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
+
+.name {
+    grid-area: name;
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.payment {
+    grid-area: payment;
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.page {
+    display: grid;
+    grid-template-areas:
+        "items name"
+        "items payment";
+    margin-top: 60px;
+}
+
+.total {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 180px;
+    margin-left: 40%;
+    margin-right: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
+.place-order {
+    text-align: center;
+    border: 5px;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}

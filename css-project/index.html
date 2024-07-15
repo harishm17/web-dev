@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header class="store-name">
+        <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="Coffee Masters" class="logo"/>
+        <div class="store-name-text">
+            <h1>Coffee Masters</h1>
+        </div>
+    </header>
+    <div class="page">
+        <div class="items-group">
+            <h2>Items</h2>
+            <div class="item-list">
+                <div class="item">
+                    <p>1x Cappuccino - $3.35</p>
+                    <p>Lite Foam</p>
+                </div>
+                <div class="item">
+                    <p>1x Cappuccino - $3.35</p>
+                    <p>Lite Foam</p>
+                </div>
+                <div class="item">
+                    <p>1x Cappuccino - $3.35</p>
+                    <p>Lite Foam</p>
+                </div>
+            </div>
+        </div>
+        <div class="name">
+            <h2>Name</h2>
+            <div class="input-group">
+                <label for="name" class="input-label">Name for order</label>
+                <input type="text" class="input-name" id="name" />
+            </div>
+        </div>
+        <div class="payment">
+            <h2>Payment</h2>
+            <div class="input-group">
+                <label for="card" class="input-label">Card number</label>
+                <input type="text" class="input-name" id="card" />
+            </div>
+            <div class="input-group">
+                <label for="expiration" class="input-label">CVV Number</label>
+                <input type="text" class="input-name" id="expiration" />
+            </div>
+        </div>
+    </div>
+    <div class="total">
+        <div class="left">Subtotal: </div>
+        <div class="right">$9.65</div>
+        <div class="left">Tax:</div>
+        <div class="right">$0.82</div>
+        <div class="left">Total:</div>
+        <div class="right">$10.47</div>
+    </div>
+    <div class="place-order">
+        Place Order
+    </div>
+</body>
+</html>
