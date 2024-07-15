@@ -72,7 +72,7 @@ async function init(){
         }
         else{
             if(row==6){
-                alert('You have lost');
+                alert('You have lost, the word was '+word_of_the_day);
                 done=true;
                 col=1;
                 row=1;
@@ -105,7 +105,7 @@ async function init(){
         if(isLetter(letter)){
             letter=letter.toUpperCase();
             if(col==6){
-                alert('You have reached the maximum number of columns');
+                alert('You have reached the maximum number of letters');
             }
             if(row<=6 && col<=5){
                 word+=letter;
